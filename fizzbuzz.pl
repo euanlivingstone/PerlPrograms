@@ -1,5 +1,7 @@
 use strict;
 use warnings;
+use v5.10;
+
 my $number = 1;
 my $msg = "";
 for ($number=1; $number<=100; $number++){
@@ -12,6 +14,5 @@ for ($number=1; $number<=100; $number++){
         $msg = "Buzz"; }
     else{
         $msg = $number; }
-    print $msg;
-    print "\n";
+    say $msg;
 }

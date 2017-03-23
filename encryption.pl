@@ -15,7 +15,7 @@ print "please enter a word to encrypt using letters and numbers only: ";
 $userinput = <STDIN>;
 chomp($userinput);
 $strlen = length($userinput);
-
+#convert user input into encryted version using ( ? * 9 ) mod 62
 while ($x < $strlen){
   $letter = (substr $userinput, $x, 1);
   $idx = firstidx { $_ eq $letter } @array;
@@ -28,4 +28,3 @@ while ($x < $strlen){
 
 }
 say " ";
-#convert input into encryted version using mod 62
